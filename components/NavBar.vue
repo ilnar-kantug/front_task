@@ -14,13 +14,17 @@
 
     <div :class="{'is-active': isOpenedMenu}" id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
+        <nuxt-link to="/" class="navbar-item">
           Home
-        </a>
+        </nuxt-link>
 
-        <a class="navbar-item">
-          Categories
-        </a>
+        <nuxt-link to="/" class="navbar-item">
+          Link 2
+        </nuxt-link>
+
+        <nuxt-link to="/" class="navbar-item">
+          Link 3
+        </nuxt-link>
       </div>
     </div>
   </nav>

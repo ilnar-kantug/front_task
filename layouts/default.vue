@@ -20,5 +20,11 @@
   }
 </script>
 
-<style>
+<style scoped>
+  @media (max-width: 1025px) {
+    .container {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
 </style>
