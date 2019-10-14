@@ -1,14 +1,22 @@
 <template>
-  <div class="container">
-    <app-nav-bar></app-nav-bar>
+  <div class="container is-fluid">
+    <app-nav-bar />
     <nuxt />
+    <app-error v-if="hasError"/>
   </div>
 </template>
 
 <script>
   import AppNavBar from '@/components/NavBar'
+  import AppError from '@/components/Error'
+  import {mapGetters} from 'vuex'
   export default {
-      components: {AppNavBar}
+      components: {AppNavBar, AppError},
+      computed: {
+          ...mapGetters({
+              hasError: 'errors/hasError'
+          })
+      }
   }
 </script>
 
