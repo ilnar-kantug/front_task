@@ -18,11 +18,12 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#2b33ff' },
   /*
   ** Global CSS
   */
   css: [
+    '@/assets/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -46,6 +47,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: "http://testing7.test/api/v1"
   },
   /*
   ** Build configuration
